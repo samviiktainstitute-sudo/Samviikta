@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Samviikta Institute · AI skills in Tamil</title>
+<meta name="description" content="Samviikta: five 4-week AI courses for rural Tamil Nadu, taught in Tamil on your phone. Run by SRK Educational and Charitable Trust.">
+<meta name="theme-color" content="#1f7a4d">
+<meta property="og:title" content="Samviikta Institute">
+<meta property="og:description" content="Learn AI skills on your phone, in Tamil. 4-week courses from ₹199/-.">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Hind+Madurai:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Samviikta">
+      <img src="assets/logo.svg" width="40" height="47" alt="">
+      <span><span class="word"><span class="s">S</span><span class="rest">AMVIIKTA</span></span><small>SRK Educational &amp; Charitable Trust</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#courses" data-i18n="nav.courses"></a>
+      <a href="#how" data-i18n="nav.how"></a>
+      <a href="#enroll" class="cta" data-i18n="nav.enroll"></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language / மொழி">
+      <button type="button" data-lang="ta" lang="ta">தமிழ்</button>
+      <button type="button" data-lang="en" lang="en">English</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" data-i18n="hero.eyebrow"></p>
+      <h1 data-i18n-html="hero.h1" style="margin-top:10px"></h1>
+      <p class="alt" data-i18n="hero.alt"></p>
+      <p class="lead" data-i18n="hero.lead"></p>
+      <div class="btns">
+        <a class="btn primary" href="#enroll" data-i18n="hero.cta1"></a>
+        <a class="btn ghost" href="#courses" data-i18n="hero.cta2"></a>
+      </div>
+    </div>
+    <ul class="facts">
+      <li><span class="n">5</span><span class="t"><span data-i18n="f1"></span><small data-i18n="f1s"></small></span></li>
+      <li><span class="n">4</span><span class="t"><span data-i18n="f2"></span><small data-i18n="f2s"></small></span></li>
+      <li><span class="n">90</span><span class="t"><span data-i18n="f3"></span><small data-i18n="f3s"></small></span></li>
+      <li><span class="n">1</span><span class="t"><span data-i18n="f4"></span><small data-i18n="f4s"></small></span></li>
+    </ul>
+  </div>
+</div>
+
+<section id="courses">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="c.eyebrow"></p>
+      <h2 data-i18n="c.h2"></h2>
+      <p data-i18n="c.p"></p>
+      <p style="color:var(--fg);font-weight:600" data-i18n="c.fees"></p>
+    </div>
+    <div class="grid" id="courseGrid"></div>
+    <div id="detail" class="detail" hidden></div>
+  </div>
+</section>
+
+<section id="how" class="alt-band">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="h.eyebrow"></p>
+      <h2 data-i18n="h.h2"></h2>
+    </div>
+    <ol class="steps">
+      <li><h3 data-i18n="s1"></h3><p data-i18n="s1p"></p></li>
+      <li><h3 data-i18n="s2"></h3><p data-i18n="s2p"></p></li>
+      <li><h3 data-i18n="s3"></h3><p data-i18n="s3p"></p></li>
+      <li><h3 data-i18n="s4"></h3><p data-i18n="s4p"></p></li>
+    </ol>
+    <div class="needs">
+      <span data-i18n="n1"></span><span data-i18n="n2"></span><span data-i18n="n3"></span><span data-i18n="n4"></span><span data-i18n="n5"></span>
+    </div>
+  </div>
+</section>
+
+<section id="enroll">
+  <div class="wrap enroll">
+    <div>
+      <p class="eyebrow" data-i18n="e.eyebrow"></p>
+      <h2 data-i18n="e.h2"></h2>
+      <p style="margin:0;color:var(--muted)" data-i18n="e.p"></p>
+      <ul class="side-list">
+        <li data-i18n="e.l1"></li>
+        <li data-i18n="e.l2"></li>
+        <li data-i18n="e.l3"></li>
+      </ul>
+    </div>
+    <div class="panel">
+      <form id="enrollForm" novalidate>
+        <div class="two">
+          <label for="fName"><span data-i18n="fl.name"></span><input id="fName" type="text" autocomplete="name" maxlength="90"></label>
+          <label for="fPhone"><span data-i18n="fl.phone"></span><input id="fPhone" type="tel" inputmode="numeric" autocomplete="tel" data-i18n-ph="fl.phonePh"></label>
+        </div>
+        <div class="two">
+          <label for="fAge"><span data-i18n="fl.age"></span><input id="fAge" type="number" min="14" max="80" inputmode="numeric"></label>
+          <label for="fDistrict"><span data-i18n="fl.district"></span><select id="fDistrict"></select></label>
+        </div>
+        <label for="fVillage"><span><span data-i18n="fl.village"></span> <small data-i18n="fl.optional"></small></span><input id="fVillage" type="text" maxlength="90"></label>
+        <fieldset>
+          <legend data-i18n="fl.courses"></legend>
+          <div class="checks" id="fCourses"></div>
+          <div class="feeline"><span data-i18n="total"></span><span class="fee" id="feeTotal" aria-live="polite"></span></div>
+        </fieldset>
+        <fieldset>
+          <legend data-i18n="fl.time"></legend>
+          <div class="radios">
+            <label><input type="radio" name="fTime" value="Weekday morning"> <span data-i18n="t.morning"></span></label>
+            <label><input type="radio" name="fTime" value="Weekday evening" checked> <span data-i18n="t.evening"></span></label>
+            <label><input type="radio" name="fTime" value="Weekend"> <span data-i18n="t.weekend"></span></label>
+          </div>
+        </fieldset>
+        <div class="two">
+          <label for="fEnglish"><span data-i18n="fl.english"></span><select id="fEnglish">
+            <option value="Can't read English yet" data-i18n="en.0"></option>
+            <option value="Can read a little" data-i18n="en.1" selected></option>
+            <option value="Can read and write" data-i18n="en.2"></option>
+            <option value="Can speak a little" data-i18n="en.3"></option>
+          </select></label>
+          <label for="fDevice"><span data-i18n="fl.device"></span><select id="fDevice">
+            <option value="Android phone only" data-i18n="d.0" selected></option>
+            <option value="Phone and laptop" data-i18n="d.1"></option>
+            <option value="iPhone" data-i18n="d.2"></option>
+          </select></label>
+        </div>
+        <label class="consent" for="fConsent"><input type="checkbox" id="fConsent"> <span data-i18n="fl.consent"></span></label>
+        <p class="err" id="formErr" role="alert" hidden></p>
+        <div class="btns"><button class="btn solid" type="submit" id="submitBtn" data-i18n="fl.submit"></button></div>
+      </form>
+      <div id="enrollDone" hidden></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Samviikta Institute</b><br><span data-i18n="ft.run"></span></div>
+    <div><span data-i18n="ft.where"></span><br>© <span id="year"></span> · <a href="admin.html" data-i18n="ft.team"></a></div>
+  </div>
+</footer>
+
+<noscript><p style="padding:16px;text-align:center">Please turn on JavaScript to see the courses and enroll.</p></noscript>
+<script type="module" src="js/site.js"></script>
+</body>
+</html>
